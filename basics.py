@@ -1,3 +1,5 @@
+# This python file is a cheat-sheet with python basics like operators, data structures, functions, methods, loops etc..
+
 # Operators-  + - & / % ** //
 # Comparison Operators > < == != >= <=
 # Identity Operators is, isnot
