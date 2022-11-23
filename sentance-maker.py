@@ -5,13 +5,18 @@
 
 def sentancemaker(phrase):
     capitalize = phrase.capitalize()
-    starts = ("How", "What", "Where")
-    if  capitalize.startswith(starts):
+    question = ("How", "What", "Where")
+    thanks = ("Thanks", "Thank")
+
+    if  capitalize.startswith(question):
         return "{}?".format(capitalize)
+    elif capitalize.startswith(thanks):
+        return "{}!".format(capitalize)
     else:
         return "{}.".format(capitalize)
 
 results = []
+
 while True:
     usr_input = input("Enter text to format (type /end to finish): ")
     if usr_input.endswith("/end"):
